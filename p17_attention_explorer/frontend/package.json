@@ -1,0 +1,63 @@
+{
+  "name": "p17-attention-explorer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --mode development --port 5173",
+    "build": "tsc -b && webpack --mode production",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "axios": "1.21.0",
+    "lucide-react": "0.562.0",
+    "plotly.js": "4.2.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-plotly.js": "2.6.0",
+    "react-router-dom": "7.18.5",
+    "tailwindcss": "3.4.17"
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.13",
+    "@babel/preset-env": "7.28.5",
+    "@babel/preset-react": "7.28.5",
+    "@babel/preset-typescript": "7.28.5",
+    "@types/jest": "30.0.0",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.1",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "24.10.4",
+    "@types/plotly.js": "2.35.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@types/react-plotly.js": "2.6.4",
+    "autoprefixer": "10.6.2",
+    "babel-jest": "30.5.2",
+    "babel-loader": "10.0.0",
+    "css-loader": "7.1.2",
+    "dotenv": "17.2.3",
+    "html-webpack-plugin": "5.6.4",
+    "jest": "30.5.2",
+    "jest-environment-jsdom": "30.5.2",
+    "jsdom": "27.3.0",
+    "postcss": "8.5.32",
+    "postcss-loader": "8.2.1",
+    "style-loader": "4.0.0",
+    "typescript": "5.9.3",
+    "webpack": "5.112.2",
+    "webpack-cli": "7.3.1",
+    "webpack-dev-server": "6.1.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["<rootDir>/src/test/setup.ts"],
+    "testMatch": ["<rootDir>/src/**/*.test.ts", "<rootDir>/src/**/*.test.tsx"]
+  },
+  "overrides": {
+    "deepmerge": "4.1.1",
+    "glob": "14.0.4",
+    "minimatch": "11.0.5"
+  }
+}
